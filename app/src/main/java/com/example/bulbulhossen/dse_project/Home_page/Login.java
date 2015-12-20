@@ -1,6 +1,8 @@
 package com.example.bulbulhossen.dse_project.Home_page;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
@@ -122,8 +124,6 @@ public class Login extends AppCompatActivity {
         }
 
         //end code parse
-
-
 
 
 
