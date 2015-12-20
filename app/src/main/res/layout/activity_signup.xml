@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1A6271"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/registration_background">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Registration Form"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/singup_background"
+            android:orientation="vertical"
+            android:padding="7dp"
+            android:weightSum="1">
+
+
+            <me.james.biuedittext.BiuEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bottom_bg"
+                android:drawableLeft="@drawable/user"
+                android:hint="Full Name"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#bbbbbb"
+                app:biu_duration="800"
+                app:biu_text_color="#217081"
+                app:biu_text_scale="1.5"
+                app:biu_text_start_size="12sp"
+                app:biu_type="flyup" />
+
+
+            <me.james.biuedittext.BiuEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edittext_bottom_bg"
+                android:drawableLeft="@drawable/user"
+                android:hint="Age"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#bbbbbb"
+                app:biu_duration="800"
+                app:biu_text_color="#217081"
+                app:biu_text_scale="1.5"
+                app:biu_text_start_size="12sp"
+                app:biu_type="flyup" />
+
+
+            <me.james.biuedittext.BiuEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edittext_bottom_bg"
+                android:drawableLeft="@drawable/password"
+                android:hint="Gender"
+                android:inputType="textVisiblePassword"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#bbbbbb"
+                app:biu_duration="800"
+                app:biu_text_color="#217081"
+                app:biu_text_scale="1.5"
+                app:biu_text_start_size="12sp"
+                app:biu_type="flyup" />
+
+            <me.james.biuedittext.BiuEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edittext_bottom_bg"
+                android:drawableLeft="@drawable/user"
+                android:hint="Mobile Number"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#bbbbbb"
+                app:biu_duration="800"
+                app:biu_text_color="#217081"
+                app:biu_text_scale="1.5"
+                app:biu_text_start_size="12sp"
+                app:biu_type="flyup" />
+
+            <me.james.biuedittext.BiuEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edittext_bottom_bg"
+                android:drawableLeft="@drawable/user"
+                android:hint="Address"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#bbbbbb"
+                app:biu_duration="800"
+                app:biu_text_color="#217081"
+                app:biu_text_scale="1.5"
+                app:biu_text_start_size="12sp"
+                app:biu_type="flyup" />
+
+
+            <me.james.biuedittext.BiuEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edittext_bottom_bg"
+                android:drawableLeft="@drawable/user"
+                android:hint="Email Address"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#bbbbbb"
+                app:biu_duration="800"
+                app:biu_text_color="#217081"
+                app:biu_text_scale="1.5"
+                app:biu_text_start_size="12sp"
+                app:biu_type="flyup" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="102dp"
+                    android:layout_height="43dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/edittext_bottom_bg"
+                    android:entries="@array/country_arrays"
+                    android:padding="10dp"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center" />
+
+
+                <me.james.biuedittext.BiuEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/edittext_bottom_bg"
+                    android:drawableLeft="@drawable/user"
+                    android:hint="Enter your id number"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textColorHint="#bbbbbb"
+                    app:biu_duration="800"
+                    app:biu_text_color="#217081"
+                    app:biu_text_scale="1.5"
+                    app:biu_text_start_size="12sp"
+                    app:biu_type="flyup" />
+
+            </LinearLayout>
+
+
+            <me.james.biuedittext.BiuEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edittext_bottom_bg"
+                android:drawableLeft="@drawable/password"
+                android:hint="Password"
+                android:inputType="textVisiblePassword"
+                android:padding="10dp"
+                android:password="true"
+                android:textColor="#000"
+                android:textColorHint="#bbbbbb"
+                app:biu_duration="800"
+                app:biu_text_color="#217081"
+                app:biu_text_scale="1.5"
+                app:biu_text_start_size="12sp"
+                android:id="@+id/password"
+                app:biu_type="flyup" />
+
+            <me.james.biuedittext.BiuEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edittext_bottom_bg"
+                android:drawableLeft="@drawable/password"
+                android:hint="Re-type Password"
+                android:inputType="textVisiblePassword"
+                android:padding="10dp"
+                android:password="true"
+                android:textColor="#000"
+                android:id="@+id/passwordAgain"
+                android:textColorHint="#bbbbbb"
+                app:biu_duration="800"
+                app:biu_text_color="#217081"
+                app:biu_text_scale="1.5"
+                app:biu_text_start_size="12sp"
+                app:biu_type="flyup" />
+
+            <TextView
+                android:id="@+id/signupp"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:background="#1A2426"
+                android:padding="15dp"
+                android:text="Sign up"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="105dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.67"
+                android:gravity="center_horizontal"
+                android:text="Already a member ?" />
+
+            <TextView
+                android:id="@+id/login_signup"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:background="#1A2426"
+                android:padding="8dp"
+                android:text="Login"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:autoLink="web"
+            android:background="#86B2BB"
+            android:padding="10dp"
+            android:text="Stock Market User Portfolio.@ 2015 All Reserved"
+            android:textAlignment="center"
+            android:textColor="#1B1B1B"
+            android:textSize="10sp"
+
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+</ScrollView>
