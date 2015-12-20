@@ -45,7 +45,6 @@
     <string name="nav_item_Account">Edit Account setting</string>
     <string name="nav_item_marketnews">Market News</string>
     <string name="nav_item_marketmonth">Monthly Report</string>
-    <string name="nav_item_logout">Log Out</string>
 
     <!-- navigation drawer item labels  -->
     <string-array name="nav_drawer_labels">
@@ -55,7 +54,6 @@
         <item>@string/nav_item_Account</item>
         <item>@string/nav_item_marketnews</item>
         <item>@string/nav_item_marketmonth</item>
-        <item>@string/nav_item_logout</item>
     </string-array>
 
     <string name="title_home">Home</string>
