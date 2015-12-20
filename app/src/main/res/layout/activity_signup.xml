@@ -52,6 +52,7 @@
 
 
             <me.james.biuedittext.BiuEditText
+                android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/edittext_bottom_bg"
@@ -123,7 +124,7 @@
                 android:layout_marginTop="3dp"
                 android:background="@drawable/edittext_bottom_bg"
                 android:drawableLeft="@drawable/user"
-                android:hint="Address"
+                android:hint="Enter Email address"
                 android:padding="10dp"
                 android:textColor="#000"
                 android:textColorHint="#bbbbbb"
@@ -141,7 +142,7 @@
                 android:layout_marginTop="3dp"
                 android:background="@drawable/edittext_bottom_bg"
                 android:drawableLeft="@drawable/user"
-                android:hint="Email Address"
+                android:hint="Username"
                 android:padding="10dp"
                 android:textColor="#000"
                 android:textColorHint="#bbbbbb"

@@ -20,6 +20,7 @@ import com.parse.SignUpCallback;
 public class Signup extends AppCompatActivity {
 
 
+    private EditText fullname;
 
     private EditText usernameView;
     private EditText passwordView;
@@ -33,9 +34,6 @@ public class Signup extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
 
 
-
-
-
         loginsign = (TextView) findViewById(R.id.login_signup);
         loginsign.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,10 +44,15 @@ public class Signup extends AppCompatActivity {
         });
 
 
-
         //parse
 
         // Set up the signup form.
+
+        //name
+        fullname = (EditText) findViewById(R.id.name);
+        //name
+
+        usernameView = (EditText) findViewById(R.id.username);
         usernameView = (EditText) findViewById(R.id.username);
         passwordView = (EditText) findViewById(R.id.password);
         passwordAgainView = (EditText) findViewById(R.id.passwordAgain);
@@ -60,12 +63,21 @@ public class Signup extends AppCompatActivity {
 
                 // Validate the sign up data
                 boolean validationError = false;
-                StringBuilder validationErrorMessage =
-                        new StringBuilder(getResources().getString(R.string.error_intro));
+
+                StringBuilder validationErrorMessage = new StringBuilder(getResources().getString(R.string.error_intro));
+
+
+                if (issEmpty(fullname)) {
+                    validationError = true;
+                    validationErrorMessage.append(getResources().getString(R.string.error_blank_fullname));
+                }
+
                 if (isEmpty(usernameView)) {
                     validationError = true;
                     validationErrorMessage.append(getResources().getString(R.string.error_blank_username));
                 }
+
+
                 if (isEmpty(passwordView)) {
                     if (validationError) {
                         validationErrorMessage.append(getResources().getString(R.string.error_join));
@@ -85,8 +97,7 @@ public class Signup extends AppCompatActivity {
 
                 // If there is a validation error, display the error
                 if (validationError) {
-                    Toast.makeText(Signup.this, validationErrorMessage.toString(), Toast.LENGTH_SHORT)
-                            .show();
+                    Toast.makeText(Signup.this, validationErrorMessage.toString(), Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -98,6 +109,7 @@ public class Signup extends AppCompatActivity {
 
                 // Set up a new Parse user
                 ParseUser user = new ParseUser();
+                user.setUsername(fullname.getText().toString());
                 user.setUsername(usernameView.getText().toString());
                 user.setPassword(passwordView.getText().toString());
                 // Call the Parse signup method
@@ -121,6 +133,25 @@ public class Signup extends AppCompatActivity {
         });
     }
 
+
+//
+//    private boolean issEmpty(EditText ettText) {
+//        return ettText.getText().toString().trim().length() == 0;
+//    }
+
+
+//
+
+    private boolean issEmpty(EditText eetText) {
+        if (eetText.getText().toString().trim().length() > 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+
+
     private boolean isEmpty(EditText etText) {
         if (etText.getText().toString().trim().length() > 0) {
             return false;
@@ -140,19 +171,10 @@ public class Signup extends AppCompatActivity {
 //
 
 
-
-
         //parse
 
 
-
-
-
-
-
-
-
-     //   TextView textlogin = (TextView) findViewById(R.id.login_signup);
+        //   TextView textlogin = (TextView) findViewById(R.id.login_signup);
 //        TextView signn = (TextView) findViewById(R.id.signupp);
 //        signn.setOnClickListener(new View.OnClickListener() {
 //            @Override
