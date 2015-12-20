@@ -20,7 +20,7 @@ import com.parse.SignUpCallback;
 public class Signup extends AppCompatActivity {
 
 
-    private EditText fullname;
+    private EditText fullname, Age, Gender, Mobile, Email, Id;
 
     private EditText usernameView;
     private EditText passwordView;
@@ -50,6 +50,11 @@ public class Signup extends AppCompatActivity {
 
         //name
         fullname = (EditText) findViewById(R.id.name);
+        Age = (EditText) findViewById(R.id.age);
+        Gender = (EditText) findViewById(R.id.gender);
+        Mobile = (EditText) findViewById(R.id.mobile);
+        Email = (EditText) findViewById(R.id.email);
+        Id = (EditText) findViewById(R.id.id);
         //name
 
         usernameView = (EditText) findViewById(R.id.username);
@@ -71,6 +76,31 @@ public class Signup extends AppCompatActivity {
                     validationError = true;
                     validationErrorMessage.append(getResources().getString(R.string.error_blank_fullname));
                 }
+
+                if (issEmpty(Age)) {
+                    validationError = true;
+                    // validationErrorMessage.append(getResources().getString(R.string.error_blank_fullname));
+                }
+                if (issEmpty(Gender)) {
+                    validationError = true;
+                    // validationErrorMessage.append(getResources().getString(R.string.error_blank_fullname));
+                }
+                if (issEmpty(Mobile)) {
+                    validationError = true;
+                    // validationErrorMessage.append(getResources().getString(R.string.error_blank_fullname));
+                }
+                if (issEmpty(Email)) {
+                    validationError = true;
+                    // validationErrorMessage.append(getResources().getString(R.string.error_blank_fullname));
+                }
+                if (issEmpty(Id)) {
+                    validationError = true;
+                    // validationErrorMessage.append(getResources().getString(R.string.error_blank_fullname));
+                }
+
+
+
+                //Important code for username and password
 
                 if (isEmpty(usernameView)) {
                     validationError = true;
@@ -149,7 +179,6 @@ public class Signup extends AppCompatActivity {
             return true;
         }
     }
-
 
 
     private boolean isEmpty(EditText etText) {

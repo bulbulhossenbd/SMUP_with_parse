@@ -69,6 +69,8 @@
 
 
             <me.james.biuedittext.BiuEditText
+                android:id="@+id/age"
+                android:inputType="numberDecimal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
@@ -86,6 +88,7 @@
 
 
             <me.james.biuedittext.BiuEditText
+                android:id="@+id/gender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
@@ -103,12 +106,14 @@
                 app:biu_type="flyup" />
 
             <me.james.biuedittext.BiuEditText
+                android:id="@+id/mobile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:background="@drawable/edittext_bottom_bg"
                 android:drawableLeft="@drawable/user"
                 android:hint="Mobile Number"
+                android:inputType="phone"
                 android:padding="10dp"
                 android:textColor="#000"
                 android:textColorHint="#bbbbbb"
@@ -119,12 +124,15 @@
                 app:biu_type="flyup" />
 
             <me.james.biuedittext.BiuEditText
+
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:background="@drawable/edittext_bottom_bg"
                 android:drawableLeft="@drawable/user"
                 android:hint="Enter Email address"
+                android:inputType="textEmailAddress"
                 android:padding="10dp"
                 android:textColor="#000"
                 android:textColorHint="#bbbbbb"
@@ -173,6 +181,8 @@
 
                 <me.james.biuedittext.BiuEditText
 
+android:inputType="number"
+                    android:id="@+id/id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
@@ -192,6 +202,8 @@
 
 
             <me.james.biuedittext.BiuEditText
+
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
@@ -207,10 +219,10 @@
                 app:biu_text_color="#217081"
                 app:biu_text_scale="1.5"
                 app:biu_text_start_size="12sp"
-                android:id="@+id/password"
                 app:biu_type="flyup" />
 
             <me.james.biuedittext.BiuEditText
+                android:id="@+id/passwordAgain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
@@ -221,7 +233,6 @@
                 android:padding="10dp"
                 android:password="true"
                 android:textColor="#000"
-                android:id="@+id/passwordAgain"
                 android:textColorHint="#bbbbbb"
                 app:biu_duration="800"
                 app:biu_text_color="#217081"
@@ -230,6 +241,7 @@
                 app:biu_type="flyup" />
 
             <TextView
+                android:inputType="textVisiblePassword"
                 android:id="@+id/signupp"
                 android:layout_width="236dp"
                 android:layout_height="wrap_content"
