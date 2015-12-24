@@ -40,7 +40,7 @@
     <string name="drawer_close">Close</string>
 
     <string name="nav_item_Dashboard">Dashboard</string>
-    <string name="nav_item_home">Home</string>
+    <string name="nav_item_home">Current Market</string>
     <string name="nav_item_market">Market Updates</string>
     <string name="nav_item_about">About us</string>
     <string name="nav_item_Account">Edit Account setting</string>
@@ -59,7 +59,7 @@
     </string-array>
 
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_home">Home</string>
+    <string name="title_home">Current Market</string>
     <string name="title_updatemarket">Market Updates</string>
     <string name="title_about">About Us</string>
     <string name="title_edit">Edit Account setting</string>
