@@ -39,6 +39,7 @@
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
 
+    <string name="nav_item_Dashboard">Dashboard</string>
     <string name="nav_item_home">Home</string>
     <string name="nav_item_market">Market Updates</string>
     <string name="nav_item_about">About us</string>
@@ -48,6 +49,7 @@
 
     <!-- navigation drawer item labels  -->
     <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_Dashboard</item>
         <item>@string/nav_item_home</item>
         <item>@string/nav_item_market</item>
         <item>@string/nav_item_about</item>
@@ -56,6 +58,7 @@
         <item>@string/nav_item_marketmonth</item>
     </string-array>
 
+    <string name="title_dashboard">Dashboard</string>
     <string name="title_home">Home</string>
     <string name="title_updatemarket">Market Updates</string>
     <string name="title_about">About Us</string>

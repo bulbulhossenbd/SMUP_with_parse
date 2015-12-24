@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="image_ids">
+
+        <item>@drawable/home</item>
+        <item>@drawable/rate</item>
+        <item>@drawable/watch</item>
+        <item>@drawable/search</item>
+        <item>@drawable/news</item>
+        <item>@drawable/user2</item>
+    </string-array>
+
+</resources>

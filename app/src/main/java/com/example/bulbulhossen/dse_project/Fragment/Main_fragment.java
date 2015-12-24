@@ -113,25 +113,29 @@ public class Main_fragment extends AppCompatActivity implements FragmentDrawer.F
         String title = getString(R.string.app_name);
         switch (position) {
             case 0:
+                fragment = new Dashboard_Fragment();
+                title = getString(R.string.title_dashboard);
+                break;
+            case 1:
                 fragment = new Home_Web_update_Fragment();
                 title = getString(R.string.title_home);
                 break;
-            case 1:
+            case 2:
                 fragment = new Update_Fragment();
                 title = getString(R.string.title_updatemarket);
                 break;
-            case 2:
+            case 3:
                 fragment = new About_Fragment();
                 title = getString(R.string.title_about);
                 break;
 
-            case 3:
+            case 4:
                 fragment = new Account_Fragment();
                 title = getString(R.string.title_edit);
                 break;
             default:
                 fragment = new Home_Web_update_Fragment();
-                title = getString(R.string.title_home);
+                title = getString(R.string.title_dashboard);
                 break;
 
         }

@@ -3,4 +3,9 @@
     <color name="colorPrimary">#217081</color>
     <color name="colorPrimaryDark">#217081</color>
     <color name="colorAccent">#217081</color>
+
+    <color name="blue">#217388</color>
+    <color name="white">#217388</color>
+    <color name="background_material_light">#fafafa</color>
+    <color name="bulbul">#17515d</color>
 </resources>
