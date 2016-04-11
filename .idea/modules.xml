@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/SMUP_with_parse.iml" filepath="$PROJECT_DIR$/SMUP_with_parse.iml" />
       <module fileurl="file://$PROJECT_DIR$/Stock_Exchagne_Project-master.iml" filepath="$PROJECT_DIR$/Stock_Exchagne_Project-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
